@@ -6,13 +6,13 @@ on:
 jobs:
   deploy:
   name: Deploy
-  runs-on: ubuntu-latest
-  env:
-    environment: dev
+    runs-on: ubuntu-latest
+    env:
+      environment: dev
 
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
 
     - name: Configure AWS Credentials 
       uses: aws-actions/configure-aws--credentials@v1
