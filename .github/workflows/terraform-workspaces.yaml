@@ -1,4 +1,3 @@
-#TEST
 name: "Terraform Deployment"
 on:
 
