@@ -10,7 +10,8 @@ on:
     branches:
       - dev
       - main
-  workflow_dispatch:
+  workflow_dispatch: Terraform Workspaces
+
 
 jobs:
   deploy:
