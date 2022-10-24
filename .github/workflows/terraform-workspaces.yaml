@@ -36,4 +36,4 @@ jobs:
           terraform workspace new ${{ env.environment }}
           terraform workspace select ${{ env.environment }} && terraform plan
           terraform workspace select ${{ env.environment }} && terraform apply -auto-approve
-          terraform workspace select ${{ env.environment }} && terraform destroy
+          terraform workspace select ${{ env.environment }} && terraform destroy -auto-approve
