@@ -2,14 +2,18 @@
 name: Terraform Workspaces
 
 on:
-  workflow_dispatch
+  push:
+    branch:
+      - main
+  workflow_dispatch:
+
 
 jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
     env:
-      environment: dev
+      environment: main
 
     steps:
       - name: Checkout
