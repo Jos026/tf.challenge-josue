@@ -1,11 +1,11 @@
-resource "aws_instance" "challenge" {
+resource "aws_instance" "clase06" {
     ami = var.ec2-ami
     instance_type = var.ec2-instance-type
-    key_name = "challenge"
+    key_name = "demo-clase06"
 
 
     tags = {
-      "Name" = "challenge"
+      "Name" = "MiEC2DemoClase06"
     }
   
 }
