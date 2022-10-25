@@ -2,10 +2,14 @@
 name: Terraform Workspaces
 
 on:
-  push:
-    branch:
+  pull_request:
+    types:
+      - opened
+    branches:
       - dev
-  workflow_dispatch:
+  push:
+    branches:
+      - dev
 
 
 jobs:
