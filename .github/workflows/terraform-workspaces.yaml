@@ -5,6 +5,7 @@ on:
   push:
     branch:
       - main
+      - dev
   workflow_dispatch:
 
 
